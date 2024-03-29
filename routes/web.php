@@ -21,7 +21,6 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', function () {
     return view('home');
 });
-
 Route::get('/jabatan', [JabatanController::class, 'index']);
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 Route::get('/profile', [ProfileController::class, 'index']);
